@@ -26,6 +26,4 @@ Made as a small personal project to learn about raylib, and basic game logic.
 
 ### Build & Run
 ```bash
-chmod +x build.sh
-./build.sh
-./build/pong
+bash build.bash
