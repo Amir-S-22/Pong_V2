@@ -1,0 +1,84 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/bear/Desktop/Projects/pong/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+Ball	ball.h	/^struct Ball{$/;"	s
+DOWN	game.h	/^            DOWN,$/;"	e	enum:Game::Paddle_direction
+Game	game.h	/^class Game{$/;"	c
+NONE	game.h	/^            NONE,$/;"	e	enum:Game::Paddle_direction
+Paddle	paddle.h	/^struct Paddle{$/;"	s
+Paddle_direction	game.h	/^        enum Paddle_direction{$/;"	g	class:Game
+State	state.h	/^struct State{$/;"	s
+UI	ui.h	/^class UI{$/;"	c
+UP	game.h	/^            UP,$/;"	e	enum:Game::Paddle_direction
+acceleration_x	ball.h	/^    int acceleration_x {};$/;"	m	struct:Ball	typeref:typename:int
+acceleration_y	ball.h	/^    int acceleration_y {};$/;"	m	struct:Ball	typeref:typename:int
+background_colour	ui.h	/^		Color background_colour {BLACK};$/;"	m	class:UI	typeref:typename:Color
+ball	game.h	/^        Ball ball;$/;"	m	class:Game	typeref:typename:Ball
+ball	state.h	/^    const Ball& ball {};$/;"	m	struct:State	typeref:typename:const Ball &
+ball_size	ui.h	/^		int ball_size {8};$/;"	m	class:UI	typeref:typename:int
+ball_x_acceleration	game.h	/^        int ball_x_acceleration {3};$/;"	m	class:Game	typeref:typename:int
+ball_x_speed	game.h	/^        int ball_x_speed {5};$/;"	m	class:Game	typeref:typename:int
+ball_y_acceleration	game.h	/^        int ball_y_acceleration {3};$/;"	m	class:Game	typeref:typename:int
+ball_y_speed	game.h	/^        int ball_y_speed {5};$/;"	m	class:Game	typeref:typename:int
+draw_background	ui.cpp	/^void UI::draw_background(){$/;"	f	class:UI	typeref:typename:void
+draw_ball	ui.cpp	/^void UI::draw_ball(Ball& ball){$/;"	f	class:UI	typeref:typename:void
+draw_everything	ui.cpp	/^void UI::draw_everything(const State& state){$/;"	f	class:UI	typeref:typename:void
+draw_line	ui.cpp	/^void UI::draw_line(){$/;"	f	class:UI	typeref:typename:void
+draw_paddles	ui.cpp	/^void UI::draw_paddles(Paddle& lp, Paddle& rp){$/;"	f	class:UI	typeref:typename:void
+draw_score	ui.cpp	/^void UI::draw_score(){$/;"	f	class:UI	typeref:typename:void
+font_size	ui.h	/^		int font_size {100};$/;"	m	class:UI	typeref:typename:int
+fps	ui.h	/^		int fps {60};$/;"	m	class:UI	typeref:typename:int
+get_ball	game.h	/^        Ball&   get_ball()    { return ball; };$/;"	f	class:Game	typeref:typename:Ball &
+get_l_paddle	game.h	/^        Paddle& get_l_paddle(){ return left_paddle; };$/;"	f	class:Game	typeref:typename:Paddle &
+get_l_score	game.h	/^        int get_l_score(){ return l_score; };$/;"	f	class:Game	typeref:typename:int
+get_r_paddle	game.h	/^        Paddle& get_r_paddle(){ return right_paddle; };$/;"	f	class:Game	typeref:typename:Paddle &
+get_r_score	game.h	/^        int get_r_score(){ return r_score; };$/;"	f	class:Game	typeref:typename:int
+get_state	game.h	/^        State get_state() { return State{&left_paddle, &right_paddle, &ball} };$/;"	f	class:Game	typeref:typename:State
+get_window_height	ui.h	/^		int get_window_height() const { return window_height; };$/;"	f	class:UI	typeref:typename:int
+get_window_width	ui.h	/^		int get_window_width() const { return window_width; };$/;"	f	class:UI	typeref:typename:int
+height	paddle.h	/^    int height {};$/;"	m	struct:Paddle	typeref:typename:int
+init	game.cpp	/^void Game::init(int window_w, int window_h){$/;"	f	class:Game	typeref:typename:void
+init_window	ui.cpp	/^void UI::init_window(){$/;"	f	class:UI	typeref:typename:void
+l_score	game.h	/^        int l_score {};$/;"	m	class:Game	typeref:typename:int
+left_paddle	game.h	/^        Paddle left_paddle {};$/;"	m	class:Game	typeref:typename:Paddle
+left_paddle_direction	game.h	/^        } left_paddle_direction, right_paddle_direction;$/;"	m	class:Game	typeref:enum:Game::Paddle_direction
+line_spacing	ui.h	/^		int line_spacing {30};$/;"	m	class:UI	typeref:typename:int
+line_width	ui.h	/^		int line_width {10};$/;"	m	class:UI	typeref:typename:int
+main	main.cpp	/^int main(){$/;"	f	typeref:typename:int
+paddle_height	game.h	/^        int paddle_height {125};$/;"	m	class:Game	typeref:typename:int
+paddle_l	state.h	/^    const Paddle& paddle_l {};$/;"	m	struct:State	typeref:typename:const Paddle &
+paddle_r	state.h	/^    const Paddle& paddle_r {};$/;"	m	struct:State	typeref:typename:const Paddle &
+paddle_speed	game.h	/^        int paddle_speed {15};$/;"	m	class:Game	typeref:typename:int
+paddle_wall_displacement	game.h	/^        int paddle_wall_displacement {40};$/;"	m	class:Game	typeref:typename:int
+paddle_width	game.h	/^        int paddle_width {20};$/;"	m	class:Game	typeref:typename:int
+process	game.cpp	/^void Game::process(){$/;"	f	class:Game	typeref:typename:void
+r_score	game.h	/^        int r_score {};$/;"	m	class:Game	typeref:typename:int
+read_input	game.cpp	/^void Game::read_input(){$/;"	f	class:Game	typeref:typename:void
+reset_ball	game.cpp	/^void Game::reset_ball(){$/;"	f	class:Game	typeref:typename:void
+right_paddle	game.h	/^        Paddle right_paddle {};$/;"	m	class:Game	typeref:typename:Paddle
+right_paddle_direction	game.h	/^        } left_paddle_direction, right_paddle_direction;$/;"	m	class:Game	typeref:enum:Game::Paddle_direction
+score_l	ui.h	/^		int score_l {};$/;"	m	class:UI	typeref:typename:int
+score_r	ui.h	/^		int score_r {};$/;"	m	class:UI	typeref:typename:int
+score_y_displacement	ui.h	/^		int score_y_displacement {40};$/;"	m	class:UI	typeref:typename:int
+set_score_l	ui.h	/^		void set_score_l(int x){ score_l = x; };$/;"	f	class:UI	typeref:typename:void
+set_score_r	ui.h	/^		void set_score_r(int x){ score_r = x; };$/;"	f	class:UI	typeref:typename:void
+speed_x	ball.h	/^    int speed_x {};$/;"	m	struct:Ball	typeref:typename:int
+speed_y	ball.h	/^    int speed_y {};$/;"	m	struct:Ball	typeref:typename:int
+title	ui.h	/^		const char* title {"Pong"};$/;"	m	class:UI	typeref:typename:const char *
+width	paddle.h	/^    int width {};$/;"	m	struct:Paddle	typeref:typename:int
+window_height	game.h	/^        int window_height {};$/;"	m	class:Game	typeref:typename:int
+window_height	ui.h	/^		int window_height {750};$/;"	m	class:UI	typeref:typename:int
+window_width	game.h	/^        int window_width {};$/;"	m	class:Game	typeref:typename:int
+window_width	ui.h	/^		int window_width {1250};$/;"	m	class:UI	typeref:typename:int
+x	ball.h	/^    int x {};$/;"	m	struct:Ball	typeref:typename:int
+x	paddle.h	/^    int x {};$/;"	m	struct:Paddle	typeref:typename:int
+y	ball.h	/^    int y {};$/;"	m	struct:Ball	typeref:typename:int
+y	paddle.h	/^    int y {};$/;"	m	struct:Paddle	typeref:typename:int
