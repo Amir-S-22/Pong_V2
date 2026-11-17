@@ -22,7 +22,7 @@ Made as a small personal project to learn about raylib, and basic game logic.
 ## 📝 Architecture
 <br>
 <p align="center">
-  <img src="architecture.png" alt="demo" width="400">
+  <img src="architecture.png" alt="demo" width="900">
 </p>
 
 ## 📦 Setup (Linux)
