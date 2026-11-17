@@ -19,6 +19,12 @@ Made as a small personal project to learn about raylib, and basic game logic.
 - scoring
 - Ball collision + adaptive speed
 
+## 📝 Architecture
+<br>
+<p align="center">
+  <img src="architecture.png" alt="demo" width="400">
+</p>
+
 ## 📦 Setup (Linux)
 ### Requirements
 - g++ (C++ compiler)
